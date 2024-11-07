@@ -24,16 +24,16 @@ function App() {
     event.preventDefault();
 
     if (!apellidoRegex.test(usuario.apellido)) {
-      setError("El Campo de apellido es erroneo");
+      //setError("El Campo de apellido es erroneo");
+      setError("Por favor chequea que la información sea correcta");
       setMostrarAvisoConfirmacion(false);
     } else if (!cursoRegex.test(usuario.curso)) {
-      setError("El Campo de curso es erroneo");
+      //setError("El Campo de curso es erroneo");
+      setError("Por favor chequea que la información sea correcta");
       setMostrarAvisoConfirmacion(false);
-      return;
     } else {
       setMostrarAvisoConfirmacion(true);
       setError("");
-      return;
     }
   };
 
