@@ -26,9 +26,8 @@ function App() {
     if (!apellidoRegex.test(usuario.apellido)) {
       setError("El Campo de apellido es erroneo");
       setMostrarAvisoConfirmacion(false);
-      return;
     } else if (!cursoRegex.test(usuario.curso)) {
-      setError("El Campo de apellido es erroneo");
+      setError("El Campo de curso es erroneo");
       setMostrarAvisoConfirmacion(false);
       return;
     } else {
